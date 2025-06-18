@@ -1,6 +1,7 @@
 var index = 1;
    function isValidUrl(url) {
-  var pattern = /^(https?:\/\/)?(www\.)?[\w\-]+\.[a-z]{2,}(\/\S*)?$/;
+  var pattern = /^(https?:\/\/)?(www\.)?[\w\-]+\.[a-z]{2,}$/;
+  return pattern.test(url);
 }
 
 function addBookmark(){
