@@ -1,0 +1,44 @@
+body{
+     background-color:#f4eadc;
+      color: black;
+}
+ h1 {
+    position: relative;
+  font-family: "Pacifico", cursive;
+font-size: 50px;
+color: #352e28;
+text-align: center;
+padding-bottom: 30px;
+z-index: 1;
+} 
+h1::after{
+ content: "";
+ position: absolute;
+ top: 40px;
+  left: 128px;
+  width: 50%;
+  height: 15px;
+  background-color: #f19916c6;
+  z-index: -1;
+  transform-origin: bottom;
+  transform: scaleY(1);
+  transition: transform 0.75s ease;
+}
+h1:hover::after{
+transform: scaleY(2.5);
+}
+
+h2{
+font-family: "Josefin Sans", sans-serif;
+font-size: 25px;
+font-weight: bold;
+background: linear-gradient(to right,#198754,  #a4c443);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  text-align: center;
+ 
+}
+::selection{
+    background-color: #efb428cd;
+    color: rgb(45, 43, 43);
+}
